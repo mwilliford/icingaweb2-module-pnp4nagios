@@ -186,7 +186,7 @@ class Grapher extends GrapherHook
             '%s on %s, %s', $service, $host, $viewName
         );
 
-        $url = Url::fromPath('pnp4nagios', array(
+        $url = Url::fromPath('pnp4nagios/graph', array(
             'host' => $this->pnpClean($host),
             'srv' => $this->pnpClean($service),
             'view' => $view
